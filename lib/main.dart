@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'login.dart';
 
-void main() => runApp(LoginPage());
+void main() => runApp(MyApp());
 
 
 class MyApp extends StatelessWidget {
@@ -10,17 +10,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-      appBar: AppBar(
-        title: Text('Home'),
-        centerTitle: true,
-      ),
-      body: Center(
-        child: Column(children: [
-          Text('hello'),
-          Text("there"),
-        ]),
-      ),
-    )
+      appBar: AppBar(title: Text('Login'),
+                        backgroundColor: Color.fromRGBO(1, 8, 45, 1),
+
+        ),
+      body: LoginPage(),
+    ),
+    debugShowCheckedModeBanner: false,
     );
   }
 }
