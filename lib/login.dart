@@ -10,7 +10,7 @@ class LoginPage extends StatelessWidget{
       MaterialApp(
         home: Scaffold(appBar: AppBar(title: Text('Login'),
         ),
-        body: Container(child: Text('Body')),
+        body: Container(child: Text('Login Page')),
         ),
 
       )
